@@ -7,115 +7,125 @@
 <title>emojis - awayuki.github.io</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;400;600&display=swap" rel="stylesheet">
 <style>
 img {width:40px;height:40px;}
-body{background:#fdca1b;font-family:sans-serif;}
-.emoji{margin:0 auto;}
-.emoji__inner{margin:0;padding:20px;box-sizing:border-box;background:#fff;border-radius:3px;}
-.emoji__h1{margin:-20px -20px 0;padding:20px 0;text-align:center;font-family:'Comfortaa',cursive;background:#3b1e56;color:#fff;}
-dl{display:flex;flex-wrap:wrap;align-items:center; margin:0;padding:30px 0 0;}
-dt{width:60px;box-sizing:border-box;margin:0;padding:10px;}
-dd{width:calc(100% - 60px);box-sizing:border-box;margin:0;font-size:14px;}
-.name{display:block;font-size: 14px;font-weight: bold;color:#ec5ceb;}
-.url{display:block;}
-@media screen and (max-width: 767px) {
+body{margin:0;padding:0;background:#eee;font-family:'Mitr',sans-serif;}
+.header{display:flex;align-items:center;box-sizing:border-box;width:100%;padding:0 15px;height:80px;background:#3b1e56;}
+.emoji__h1{margin:0;font-size:30px;font-weight:400;color:#fff;}
+.emoji{margin:30px auto;}
+.emoji__block{margin:30px 0;padding:15px 0 55px;box-sizing:border-box;border:4px solid #000;border-radius:40px;background:#000;}
+.emoji__list{display:flex;flex-wrap:wrap;align-items:stretch; margin:15px 0 0;padding:0;border-top:2px solid #000;}
+.emoji__list dt{display:flex;align-items:center;justify-content:center;width:60px;box-sizing:border-box;margin:0;padding:10px;border-bottom:2px solid#000;background:#eee;}
+.emoji__list dd{width:calc(100% - 60px);box-sizing:border-box;margin:0;padding:10px 0;border-bottom:2px solid #000;background:#eee;}
+.name{display:block;font-size: 20px;font-weight: 400;color:#3b1e56;}
+.name::before{content:':';display:inline-block;margin-right:.2em;}
+.name::after{content:':';display:inline-block;margin-left:.2em;}
+.url{display:block;font-size:14px;font-weight:400;}
+.link__json{width:120px;margin:0 15px 0 auto;}
+.link__json a{display:flex;align-items:center;justify-content:center;height:40px;width:120px;border-radius:20px;background:#ec5ceb;text-decoration:none;color:#fff;}
+@media screen and (max-width: 479px) {
+    .emoji__h1{font-size:6vw;}
+    .name{font-size:4vw;}
+    .url{font-size:3vw;}
+    .emoji__block{margin:15px;}
 }
-@media screen and (min-width: 768px) {
-  .emoji__inner{margin:0 auto;max-width:728px;}
+@media screen and (min-width: 480px) {
+    .emoji__block{margin:0 auto;max-width:450px;}
 }
 </style>
 </head>
 <body>
+<header class="header">
+    <h1 class="emoji__h1">SUSHIYUKI emojis</h1>
+</header>
 
-<div class="emoji__inner">
-    <div class="emoji">
-        <h1 class="emoji__h1">SUSHIYUKI emojis</h1>
-        <dl>
-            <dt><img src="emoji/v1-001.png" alt=""></dt><dd><span class="name">sushiyuki_maguro</span><span class="url">"https://awayuki.github.io/emoji/v1-001.png</span></dd>
-            <dt><img src="emoji/v1-002.png" alt=""></dt><dd><span class="name">sushiyuki_tamago</span><span class="url">"https://awayuki.github.io/emoji/v1-002.png</span></dd>
-            <dt><img src="emoji/v1-003.png" alt=""></dt><dd><span class="name">sushiyuki_ebi</span><span class="url">"https://awayuki.github.io/emoji/v1-003.png</span></dd>
-            <dt><img src="emoji/v1-004.png" alt=""></dt><dd><span class="name">sushiyuki_ikura</span><span class="url">"https://awayuki.github.io/emoji/v1-004.png</span></dd>
-            <dt><img src="emoji/v1-005.png" alt=""></dt><dd><span class="name">sushiyuki_hamachi</span><span class="url">"https://awayuki.github.io/emoji/v1-005.png</span></dd>
-            <dt><img src="emoji/v1-006.png" alt=""></dt><dd><span class="name">sushiyuki_salmon</span><span class="url">"https://awayuki.github.io/emoji/v1-006.png</span></dd>
-            <dt><img src="emoji/v1-007.png" alt=""></dt><dd><span class="name">sushiyuki_kohada</span><span class="url">"https://awayuki.github.io/emoji/v1-007.png</span></dd>
-            <dt><img src="emoji/v1-008.png" alt=""></dt><dd><span class="name">sushiyuki_ika</span><span class="url">"https://awayuki.github.io/emoji/v1-008.png</span></dd>
-            <dt><img src="emoji/v1-009.png" alt=""></dt><dd><span class="name">sushiyuki_uni</span><span class="url">"https://awayuki.github.io/emoji/v1-009.png</span></dd>
-            <dt><img src="emoji/v1-010.png" alt=""></dt><dd><span class="name">sushiyuki_anago</span><span class="url">"https://awayuki.github.io/emoji/v1-010.png</span></dd>
-            <dt><img src="emoji/v1-011.png" alt=""></dt><dd><span class="name">sushiyuki_shari</span><span class="url">"https://awayuki.github.io/emoji/v1-011.png</span></dd>
-            <dt><img src="emoji/v1-012.png" alt=""></dt><dd><span class="name">sushiyuki_toro</span><span class="url">"https://awayuki.github.io/emoji/v1-012.png</span></dd>
-            <dt><img src="emoji/v1-013.png" alt=""></dt><dd><span class="name">sushiyuki_amaebi</span><span class="url">"https://awayuki.github.io/emoji/v1-013.png</span></dd>
-            <dt><img src="emoji/v1-014.png" alt=""></dt><dd><span class="name">sushiyuki_negitoro</span><span class="url">"https://awayuki.github.io/emoji/v1-014.png</span></dd>
-            <dt><img src="emoji/v1-015.png" alt=""></dt><dd><span class="name">sushiyuki_menegi</span><span class="url">"https://awayuki.github.io/emoji/v1-015.png</span></dd>
-            <dt><img src="emoji/v1-016.png" alt=""></dt><dd><span class="name">sushiyuki_inari</span><span class="url">"https://awayuki.github.io/emoji/v1-016.png</span></dd>
-            <dt><img src="emoji/v1-017.png" alt=""></dt><dd><span class="name">sushiyuki_saba</span><span class="url">"https://awayuki.github.io/emoji/v1-017.png</span></dd>
-            <dt><img src="emoji/v1-018.png" alt=""></dt><dd><span class="name">sushiyuki_futomaki</span><span class="url">"https://awayuki.github.io/emoji/v1-018.png</span></dd>
-            <dt><img src="emoji/v1-019.png" alt=""></dt><dd><span class="name">sushiyuki_tekkamaki</span><span class="url">"https://awayuki.github.io/emoji/v1-019.png</span></dd>
-            <dt><img src="emoji/v1-020.png" alt=""></dt><dd><span class="name">sushiyuki_kappamaki</span><span class="url">"https://awayuki.github.io/emoji/v1-020.png</span></dd>
-            <dt><img src="emoji/v1-021.png" alt=""></dt><dd><span class="name">sushiyuki_sushiroll</span><span class="url">"https://awayuki.github.io/emoji/v1-021.png</span></dd>
-            <dt><img src="emoji/v1-022.png" alt=""></dt><dd><span class="name">sushiyuki_kappa</span><span class="url">"https://awayuki.github.io/emoji/v1-022.png</span></dd>
-            <dt><img src="emoji/v1-023.png" alt=""></dt><dd><span class="name">sushiyuki_agari</span><span class="url">"https://awayuki.github.io/emoji/v1-023.png</span></dd>
-            <dt><img src="emoji/v1-024.png" alt=""></dt><dd><span class="name">sushiyuki_twinkle</span><span class="url">"https://awayuki.github.io/emoji/v1-024.png</span></dd>
-            <dt><img src="emoji/v1-025.png" alt=""></dt><dd><span class="name">sushiyuki_flower</span><span class="url">"https://awayuki.github.io/emoji/v1-025.png</span></dd>
-            <dt><img src="emoji/v1-026.png" alt=""></dt><dd><span class="name">sushiyuki_star</span><span class="url">"https://awayuki.github.io/emoji/v1-026.png</span></dd>
-            <dt><img src="emoji/v1-027.png" alt=""></dt><dd><span class="name">sushiyuki_heart</span><span class="url">"https://awayuki.github.io/emoji/v1-027.png</span></dd>
-            <dt><img src="emoji/v1-028.png" alt=""></dt><dd><span class="name">sushiyuki_musical_notes</span><span class="url">"https://awayuki.github.io/emoji/v1-028.png</span></dd>
-            <dt><img src="emoji/v1-029.png" alt=""></dt><dd><span class="name">sushiyuki_tear_drop</span><span class="url">"https://awayuki.github.io/emoji/v1-029.png</span></dd>
-            <dt><img src="emoji/v1-030.png" alt=""></dt><dd><span class="name">sushiyuki_sweat</span><span class="url">"https://awayuki.github.io/emoji/v1-030.png</span></dd>
-            <dt><img src="emoji/v1-031.png" alt=""></dt><dd><span class="name">sushiyuki_anger</span><span class="url">"https://awayuki.github.io/emoji/v1-031.png</span></dd>
-            <dt><img src="emoji/v1-032.png" alt=""></dt><dd><span class="name">sushiyuki_surprised</span><span class="url">"https://awayuki.github.io/emoji/v1-032.png</span></dd>
-            <dt><img src="emoji/v1-033.png" alt=""></dt><dd><span class="name">susyiyuki_question</span><span class="url">"https://awayuki.github.io/emoji/v1-033.png</span></dd>
-            <dt><img src="emoji/v1-034.png" alt=""></dt><dd><span class="name">sushiyuki_exclamation</span><span class="url">"https://awayuki.github.io/emoji/v1-034.png</span></dd>
-            <dt><img src="emoji/v1-035.png" alt=""></dt><dd><span class="name">sushiyuki_double_exclamation</span><span class="url">"https://awayuki.github.io/emoji/v1-035.png</span></dd>
-            <dt><img src="emoji/v1-036.png" alt=""></dt><dd><span class="name">sushiyuki_exclamation_question</span><span class="url">"https://awayuki.github.io/emoji/v1-036.png</span></dd>
-            <dt><img src="emoji/v1-037.png" alt=""></dt><dd><span class="name">sushiyuki_belt_maguro</span><span class="url">"https://awayuki.github.io/emoji/v1-037.png</span></dd>
-            <dt><img src="emoji/v1-038.png" alt=""></dt><dd><span class="name">sushiyuki_belt_ebi</span><span class="url">"https://awayuki.github.io/emoji/v1-038.png</span></dd>
-            <dt><img src="emoji/v1-039.png" alt=""></dt><dd><span class="name">sushiyuki_belt_tamago</span><span class="url">"https://awayuki.github.io/emoji/v1-039.png</span></dd>
-            <dt><img src="emoji/v1-040.png" alt=""></dt><dd><span class="name">sushiyuki_belt</span><span class="url">"https://awayuki.github.io/emoji/v1-040.png</span></dd>
-            <dt><img src="emoji/v2-001.png" alt=""></dt><dd><span class="name">sushiyuki_belt_toro</span><span class="url">"https://awayuki.github.io/emoji/v2-001.png</span></dd>
-            <dt><img src="emoji/v2-002.png" alt=""></dt><dd><span class="name">sushiyuki_belt_ok</span><span class="url">"https://awayuki.github.io/emoji/v2-002.png</span></dd>
-            <dt><img src="emoji/v2-003.png" alt=""></dt><dd><span class="name">sushiyuki_belt_tamago2</span><span class="url">"https://awayuki.github.io/emoji/v2-003.png</span></dd>
-            <dt><img src="emoji/v2-004.png" alt=""></dt><dd><span class="name">sushiyuki_belt_ryokai</span><span class="url">"https://awayuki.github.io/emoji/v2-004.png</span></dd>
-            <dt><img src="emoji/v2-005.png" alt=""></dt><dd><span class="name">sushiyuki_belt_hamachi</span><span class="url">"https://awayuki.github.io/emoji/v2-005.png</span></dd>
-            <dt><img src="emoji/v2-006.png" alt=""></dt><dd><span class="name">sushiyuki_belt_hai</span><span class="url">"https://awayuki.github.io/emoji/v2-006.png</span></dd>
-            <dt><img src="emoji/v2-007.png" alt=""></dt><dd><span class="name">sushiyuki_belt_ikura</span><span class="url">"https://awayuki.github.io/emoji/v2-007.png</span></dd>
-            <dt><img src="emoji/v2-008.png" alt=""></dt><dd><span class="name">sushiyuki_belt_arigatou</span><span class="url">"https://awayuki.github.io/emoji/v2-008.png</span></dd>
-            <dt><img src="emoji/v2-009.png" alt=""></dt><dd><span class="name">sushiyuki_belt_ebi</span><span class="url">"https://awayuki.github.io/emoji/v2-009.png</span></dd>
-            <dt><img src="emoji/v2-010.png" alt=""></dt><dd><span class="name">sushiyuki_belt_waai</span><span class="url">"https://awayuki.github.io/emoji/v2-010.png</span></dd>
-            <dt><img src="emoji/v2-011.png" alt=""></dt><dd><span class="name">sushiyuki_belt_salmon</span><span class="url">"https://awayuki.github.io/emoji/v2-011.png</span></dd>
-            <dt><img src="emoji/v2-012.png" alt=""></dt><dd><span class="name">sushiyuki_belt_yoroshiku</span><span class="url">"https://awayuki.github.io/emoji/v2-012.png</span></dd>
-            <dt><img src="emoji/v2-013.png" alt=""></dt><dd><span class="name">sushiyuki_belt_kohada</span><span class="url">"https://awayuki.github.io/emoji/v2-013.png</span></dd>
-            <dt><img src="emoji/v2-014.png" alt=""></dt><dd><span class="name">sushiyuki_belt_iine</span><span class="url">"https://awayuki.github.io/emoji/v2-014.png</span></dd>
-            <dt><img src="emoji/v2-015.png" alt=""></dt><dd><span class="name">sushiyuki_belt_ika</span><span class="url">"https://awayuki.github.io/emoji/v2-015.png</span></dd>
-            <dt><img src="emoji/v2-016.png" alt=""></dt><dd><span class="name">sushiyuki_belt_otsukare</span><span class="url">"https://awayuki.github.io/emoji/v2-016.png</span></dd>
-            <dt><img src="emoji/v2-017.png" alt=""></dt><dd><span class="name">sushiyuki_belt_uni</span><span class="url">"https://awayuki.github.io/emoji/v2-017.png</span></dd>
-            <dt><img src="emoji/v2-018.png" alt=""></dt><dd><span class="name">sushiyuki_belt_ganbare</span><span class="url">"https://awayuki.github.io/emoji/v2-018.png</span></dd>
-            <dt><img src="emoji/v2-019.png" alt=""></dt><dd><span class="name">sushiyuki_belt_anago</span><span class="url">"https://awayuki.github.io/emoji/v2-019.png</span></dd>
-            <dt><img src="emoji/v2-020.png" alt=""></dt><dd><span class="name">sushiyuki_belt_matane</span><span class="url">"https://awayuki.github.io/emoji/v2-020.png</span></dd>
-            <dt><img src="emoji/v2-021.png" alt=""></dt><dd><span class="name">sushiyuki_belt_shari</span><span class="url">"https://awayuki.github.io/emoji/v2-021.png</span></dd>
-            <dt><img src="emoji/v2-022.png" alt=""></dt><dd><span class="name">sushiyuki_belt_ohayou</span><span class="url">"https://awayuki.github.io/emoji/v2-022.png</span></dd>
-            <dt><img src="emoji/v2-023.png" alt=""></dt><dd><span class="name">sushiyuki_belt_maguro2</span><span class="url">"https://awayuki.github.io/emoji/v2-023.png</span></dd>
-            <dt><img src="emoji/v2-024.png" alt=""></dt><dd><span class="name">sushiyuki_belt_oyasumi</span><span class="url">"https://awayuki.github.io/emoji/v2-024.png</span></dd>
-            <dt><img src="emoji/v2-025.png" alt=""></dt><dd><span class="name">sushiyuki_belt_amaebi</span><span class="url">"https://awayuki.github.io/emoji/v2-025.png</span></dd>
-            <dt><img src="emoji/v2-026.png" alt=""></dt><dd><span class="name">sushiyuki_belt_wara</span><span class="url">"https://awayuki.github.io/emoji/v2-026.png</span></dd>
-            <dt><img src="emoji/v2-027.png" alt=""></dt><dd><span class="name">sushiyuki_belt_negitoro</span><span class="url">"https://awayuki.github.io/emoji/v2-027.png</span></dd>
-            <dt><img src="emoji/v2-028.png" alt=""></dt><dd><span class="name">sushiyuki_belt_namida</span><span class="url">"https://awayuki.github.io/emoji/v2-028.png</span></dd>
-            <dt><img src="emoji/v2-029.png" alt=""></dt><dd><span class="name">sushiyuki_belt_menegi</span><span class="url">"https://awayuki.github.io/emoji/v2-029.png</span></dd>
-            <dt><img src="emoji/v2-030.png" alt=""></dt><dd><span class="name">sushiyuki_belt_ase</span><span class="url">"https://awayuki.github.io/emoji/v2-030.png</span></dd>
-            <dt><img src="emoji/v2-031.png" alt=""></dt><dd><span class="name">sushiyuki_belt_inari</span><span class="url">"https://awayuki.github.io/emoji/v2-031.png</span></dd>
-            <dt><img src="emoji/v2-032.png" alt=""></dt><dd><span class="name">sushiyuki_belt_saba</span><span class="url">"https://awayuki.github.io/emoji/v2-032.png</span></dd>
-            <dt><img src="emoji/v2-033.png" alt=""></dt><dd><span class="name">sushiyuki_belt_tekkamaki</span><span class="url">"https://awayuki.github.io/emoji/v2-033.png</span></dd>
-            <dt><img src="emoji/v2-034.png" alt=""></dt><dd><span class="name">sushiyuki_belt_kappamaki</span><span class="url">"https://awayuki.github.io/emoji/v2-034.png</span></dd>
-            <dt><img src="emoji/v2-035.png" alt=""></dt><dd><span class="name">sushiyuki_belt_kappa</span><span class="url">"https://awayuki.github.io/emoji/v2-035.png</span></dd>
-            <dt><img src="emoji/v2-036.png" alt=""></dt><dd><span class="name">sushiyuki_belt_heart1</span><span class="url">"https://awayuki.github.io/emoji/v2-036.png</span></dd>
-            <dt><img src="emoji/v2-037.png" alt=""></dt><dd><span class="name">sushiyuki_belt_heart2</span><span class="url">"https://awayuki.github.io/emoji/v2-037.png</span></dd>
-            <dt><img src="emoji/v2-038.png" alt=""></dt><dd><span class="name">sushiyuki_belt_beer</span><span class="url">"https://awayuki.github.io/emoji/v2-038.png</span></dd>
-            <dt><img src="emoji/v2-039.png" alt=""></dt><dd><span class="name">sushiyuki_belt_pudding</span><span class="url">"https://awayuki.github.io/emoji/v2-039.png</span></dd>
-            <dt><img src="emoji/v2-040.png" alt=""></dt><dd><span class="name">sushiyuki_belt_coffee</span><span class="url">"https://awayuki.github.io/emoji/v2-040.png</span></dd>
-        </dl>
-        <dl>
-            <dt><img src="emoji/np-001.gif" alt=""></dt><dd><span class="name">nostopus_walk</span><span class="url">"https://awayuki.github.io/emoji/np-001.gif</span></dd>
-            <dt><img src="emoji/np-002.gif" alt=""></dt><dd><span class="name">nostopus_spin</span><span class="url">"https://awayuki.github.io/emoji/np-002.gif</span></dd>
+<div class="emoji">
+    <div class="emoji__block">
+        <p class="link__json"><a href="awayuki_emojis.json">JSON file</a></p>
+        <dl class="emoji__list">
+            <dt><img src="emoji/v1-001.png" alt=""></dt><dd><span class="name">sushiyuki_maguro</span><span class="url">https://awayuki.github.io/emoji/v1-001.png</span></dd>
+            <dt><img src="emoji/v1-002.png" alt=""></dt><dd><span class="name">sushiyuki_tamago</span><span class="url">https://awayuki.github.io/emoji/v1-002.png</span></dd>
+            <dt><img src="emoji/v1-003.png" alt=""></dt><dd><span class="name">sushiyuki_ebi</span><span class="url">https://awayuki.github.io/emoji/v1-003.png</span></dd>
+            <dt><img src="emoji/v1-004.png" alt=""></dt><dd><span class="name">sushiyuki_ikura</span><span class="url">https://awayuki.github.io/emoji/v1-004.png</span></dd>
+            <dt><img src="emoji/v1-005.png" alt=""></dt><dd><span class="name">sushiyuki_hamachi</span><span class="url">https://awayuki.github.io/emoji/v1-005.png</span></dd>
+            <dt><img src="emoji/v1-006.png" alt=""></dt><dd><span class="name">sushiyuki_salmon</span><span class="url">https://awayuki.github.io/emoji/v1-006.png</span></dd>
+            <dt><img src="emoji/v1-007.png" alt=""></dt><dd><span class="name">sushiyuki_kohada</span><span class="url">https://awayuki.github.io/emoji/v1-007.png</span></dd>
+            <dt><img src="emoji/v1-008.png" alt=""></dt><dd><span class="name">sushiyuki_ika</span><span class="url">https://awayuki.github.io/emoji/v1-008.png</span></dd>
+            <dt><img src="emoji/v1-009.png" alt=""></dt><dd><span class="name">sushiyuki_uni</span><span class="url">https://awayuki.github.io/emoji/v1-009.png</span></dd>
+            <dt><img src="emoji/v1-010.png" alt=""></dt><dd><span class="name">sushiyuki_anago</span><span class="url">https://awayuki.github.io/emoji/v1-010.png</span></dd>
+            <dt><img src="emoji/v1-011.png" alt=""></dt><dd><span class="name">sushiyuki_shari</span><span class="url">https://awayuki.github.io/emoji/v1-011.png</span></dd>
+            <dt><img src="emoji/v1-012.png" alt=""></dt><dd><span class="name">sushiyuki_toro</span><span class="url">https://awayuki.github.io/emoji/v1-012.png</span></dd>
+            <dt><img src="emoji/v1-013.png" alt=""></dt><dd><span class="name">sushiyuki_amaebi</span><span class="url">https://awayuki.github.io/emoji/v1-013.png</span></dd>
+            <dt><img src="emoji/v1-014.png" alt=""></dt><dd><span class="name">sushiyuki_negitoro</span><span class="url">https://awayuki.github.io/emoji/v1-014.png</span></dd>
+            <dt><img src="emoji/v1-015.png" alt=""></dt><dd><span class="name">sushiyuki_menegi</span><span class="url">https://awayuki.github.io/emoji/v1-015.png</span></dd>
+            <dt><img src="emoji/v1-016.png" alt=""></dt><dd><span class="name">sushiyuki_inari</span><span class="url">https://awayuki.github.io/emoji/v1-016.png</span></dd>
+            <dt><img src="emoji/v1-017.png" alt=""></dt><dd><span class="name">sushiyuki_saba</span><span class="url">https://awayuki.github.io/emoji/v1-017.png</span></dd>
+            <dt><img src="emoji/v1-018.png" alt=""></dt><dd><span class="name">sushiyuki_futomaki</span><span class="url">https://awayuki.github.io/emoji/v1-018.png</span></dd>
+            <dt><img src="emoji/v1-019.png" alt=""></dt><dd><span class="name">sushiyuki_tekkamaki</span><span class="url">https://awayuki.github.io/emoji/v1-019.png</span></dd>
+            <dt><img src="emoji/v1-020.png" alt=""></dt><dd><span class="name">sushiyuki_kappamaki</span><span class="url">https://awayuki.github.io/emoji/v1-020.png</span></dd>
+            <dt><img src="emoji/v1-021.png" alt=""></dt><dd><span class="name">sushiyuki_sushiroll</span><span class="url">https://awayuki.github.io/emoji/v1-021.png</span></dd>
+            <dt><img src="emoji/v1-022.png" alt=""></dt><dd><span class="name">sushiyuki_kappa</span><span class="url">https://awayuki.github.io/emoji/v1-022.png</span></dd>
+            <dt><img src="emoji/v1-023.png" alt=""></dt><dd><span class="name">sushiyuki_agari</span><span class="url">https://awayuki.github.io/emoji/v1-023.png</span></dd>
+            <dt><img src="emoji/v1-024.png" alt=""></dt><dd><span class="name">sushiyuki_twinkle</span><span class="url">https://awayuki.github.io/emoji/v1-024.png</span></dd>
+            <dt><img src="emoji/v1-025.png" alt=""></dt><dd><span class="name">sushiyuki_flower</span><span class="url">https://awayuki.github.io/emoji/v1-025.png</span></dd>
+            <dt><img src="emoji/v1-026.png" alt=""></dt><dd><span class="name">sushiyuki_star</span><span class="url">https://awayuki.github.io/emoji/v1-026.png</span></dd>
+            <dt><img src="emoji/v1-027.png" alt=""></dt><dd><span class="name">sushiyuki_heart</span><span class="url">https://awayuki.github.io/emoji/v1-027.png</span></dd>
+            <dt><img src="emoji/v1-028.png" alt=""></dt><dd><span class="name">sushiyuki_musical_notes</span><span class="url">https://awayuki.github.io/emoji/v1-028.png</span></dd>
+            <dt><img src="emoji/v1-029.png" alt=""></dt><dd><span class="name">sushiyuki_tear_drop</span><span class="url">https://awayuki.github.io/emoji/v1-029.png</span></dd>
+            <dt><img src="emoji/v1-030.png" alt=""></dt><dd><span class="name">sushiyuki_sweat</span><span class="url">https://awayuki.github.io/emoji/v1-030.png</span></dd>
+            <dt><img src="emoji/v1-031.png" alt=""></dt><dd><span class="name">sushiyuki_anger</span><span class="url">https://awayuki.github.io/emoji/v1-031.png</span></dd>
+            <dt><img src="emoji/v1-032.png" alt=""></dt><dd><span class="name">sushiyuki_surprised</span><span class="url">https://awayuki.github.io/emoji/v1-032.png</span></dd>
+            <dt><img src="emoji/v1-033.png" alt=""></dt><dd><span class="name">susyiyuki_question</span><span class="url">https://awayuki.github.io/emoji/v1-033.png</span></dd>
+            <dt><img src="emoji/v1-034.png" alt=""></dt><dd><span class="name">sushiyuki_exclamation</span><span class="url">https://awayuki.github.io/emoji/v1-034.png</span></dd>
+            <dt><img src="emoji/v1-035.png" alt=""></dt><dd><span class="name">sushiyuki_double_exclamation</span><span class="url">https://awayuki.github.io/emoji/v1-035.png</span></dd>
+            <dt><img src="emoji/v1-036.png" alt=""></dt><dd><span class="name">sushiyuki_exclamation_question</span><span class="url">https://awayuki.github.io/emoji/v1-036.png</span></dd>
+            <dt><img src="emoji/v1-037.png" alt=""></dt><dd><span class="name">sushiyuki_belt_maguro</span><span class="url">https://awayuki.github.io/emoji/v1-037.png</span></dd>
+            <dt><img src="emoji/v1-038.png" alt=""></dt><dd><span class="name">sushiyuki_belt_ebi</span><span class="url">https://awayuki.github.io/emoji/v1-038.png</span></dd>
+            <dt><img src="emoji/v1-039.png" alt=""></dt><dd><span class="name">sushiyuki_belt_tamago</span><span class="url">https://awayuki.github.io/emoji/v1-039.png</span></dd>
+            <dt><img src="emoji/v1-040.png" alt=""></dt><dd><span class="name">sushiyuki_belt</span><span class="url">https://awayuki.github.io/emoji/v1-040.png</span></dd>
+            <dt><img src="emoji/v2-001.png" alt=""></dt><dd><span class="name">sushiyuki_belt_toro</span><span class="url">https://awayuki.github.io/emoji/v2-001.png</span></dd>
+            <dt><img src="emoji/v2-002.png" alt=""></dt><dd><span class="name">sushiyuki_belt_ok</span><span class="url">https://awayuki.github.io/emoji/v2-002.png</span></dd>
+            <dt><img src="emoji/v2-003.png" alt=""></dt><dd><span class="name">sushiyuki_belt_tamago2</span><span class="url">https://awayuki.github.io/emoji/v2-003.png</span></dd>
+            <dt><img src="emoji/v2-004.png" alt=""></dt><dd><span class="name">sushiyuki_belt_ryokai</span><span class="url">https://awayuki.github.io/emoji/v2-004.png</span></dd>
+            <dt><img src="emoji/v2-005.png" alt=""></dt><dd><span class="name">sushiyuki_belt_hamachi</span><span class="url">https://awayuki.github.io/emoji/v2-005.png</span></dd>
+            <dt><img src="emoji/v2-006.png" alt=""></dt><dd><span class="name">sushiyuki_belt_hai</span><span class="url">https://awayuki.github.io/emoji/v2-006.png</span></dd>
+            <dt><img src="emoji/v2-007.png" alt=""></dt><dd><span class="name">sushiyuki_belt_ikura</span><span class="url">https://awayuki.github.io/emoji/v2-007.png</span></dd>
+            <dt><img src="emoji/v2-008.png" alt=""></dt><dd><span class="name">sushiyuki_belt_arigatou</span><span class="url">https://awayuki.github.io/emoji/v2-008.png</span></dd>
+            <dt><img src="emoji/v2-009.png" alt=""></dt><dd><span class="name">sushiyuki_belt_ebi</span><span class="url">https://awayuki.github.io/emoji/v2-009.png</span></dd>
+            <dt><img src="emoji/v2-010.png" alt=""></dt><dd><span class="name">sushiyuki_belt_waai</span><span class="url">https://awayuki.github.io/emoji/v2-010.png</span></dd>
+            <dt><img src="emoji/v2-011.png" alt=""></dt><dd><span class="name">sushiyuki_belt_salmon</span><span class="url">https://awayuki.github.io/emoji/v2-011.png</span></dd>
+            <dt><img src="emoji/v2-012.png" alt=""></dt><dd><span class="name">sushiyuki_belt_yoroshiku</span><span class="url">https://awayuki.github.io/emoji/v2-012.png</span></dd>
+            <dt><img src="emoji/v2-013.png" alt=""></dt><dd><span class="name">sushiyuki_belt_kohada</span><span class="url">https://awayuki.github.io/emoji/v2-013.png</span></dd>
+            <dt><img src="emoji/v2-014.png" alt=""></dt><dd><span class="name">sushiyuki_belt_iine</span><span class="url">https://awayuki.github.io/emoji/v2-014.png</span></dd>
+            <dt><img src="emoji/v2-015.png" alt=""></dt><dd><span class="name">sushiyuki_belt_ika</span><span class="url">https://awayuki.github.io/emoji/v2-015.png</span></dd>
+            <dt><img src="emoji/v2-016.png" alt=""></dt><dd><span class="name">sushiyuki_belt_otsukare</span><span class="url">https://awayuki.github.io/emoji/v2-016.png</span></dd>
+            <dt><img src="emoji/v2-017.png" alt=""></dt><dd><span class="name">sushiyuki_belt_uni</span><span class="url">https://awayuki.github.io/emoji/v2-017.png</span></dd>
+            <dt><img src="emoji/v2-018.png" alt=""></dt><dd><span class="name">sushiyuki_belt_ganbare</span><span class="url">https://awayuki.github.io/emoji/v2-018.png</span></dd>
+            <dt><img src="emoji/v2-019.png" alt=""></dt><dd><span class="name">sushiyuki_belt_anago</span><span class="url">https://awayuki.github.io/emoji/v2-019.png</span></dd>
+            <dt><img src="emoji/v2-020.png" alt=""></dt><dd><span class="name">sushiyuki_belt_matane</span><span class="url">https://awayuki.github.io/emoji/v2-020.png</span></dd>
+            <dt><img src="emoji/v2-021.png" alt=""></dt><dd><span class="name">sushiyuki_belt_shari</span><span class="url">https://awayuki.github.io/emoji/v2-021.png</span></dd>
+            <dt><img src="emoji/v2-022.png" alt=""></dt><dd><span class="name">sushiyuki_belt_ohayou</span><span class="url">https://awayuki.github.io/emoji/v2-022.png</span></dd>
+            <dt><img src="emoji/v2-023.png" alt=""></dt><dd><span class="name">sushiyuki_belt_maguro2</span><span class="url">https://awayuki.github.io/emoji/v2-023.png</span></dd>
+            <dt><img src="emoji/v2-024.png" alt=""></dt><dd><span class="name">sushiyuki_belt_oyasumi</span><span class="url">https://awayuki.github.io/emoji/v2-024.png</span></dd>
+            <dt><img src="emoji/v2-025.png" alt=""></dt><dd><span class="name">sushiyuki_belt_amaebi</span><span class="url">https://awayuki.github.io/emoji/v2-025.png</span></dd>
+            <dt><img src="emoji/v2-026.png" alt=""></dt><dd><span class="name">sushiyuki_belt_wara</span><span class="url">https://awayuki.github.io/emoji/v2-026.png</span></dd>
+            <dt><img src="emoji/v2-027.png" alt=""></dt><dd><span class="name">sushiyuki_belt_negitoro</span><span class="url">https://awayuki.github.io/emoji/v2-027.png</span></dd>
+            <dt><img src="emoji/v2-028.png" alt=""></dt><dd><span class="name">sushiyuki_belt_namida</span><span class="url">https://awayuki.github.io/emoji/v2-028.png</span></dd>
+            <dt><img src="emoji/v2-029.png" alt=""></dt><dd><span class="name">sushiyuki_belt_menegi</span><span class="url">https://awayuki.github.io/emoji/v2-029.png</span></dd>
+            <dt><img src="emoji/v2-030.png" alt=""></dt><dd><span class="name">sushiyuki_belt_ase</span><span class="url">https://awayuki.github.io/emoji/v2-030.png</span></dd>
+            <dt><img src="emoji/v2-031.png" alt=""></dt><dd><span class="name">sushiyuki_belt_inari</span><span class="url">https://awayuki.github.io/emoji/v2-031.png</span></dd>
+            <dt><img src="emoji/v2-032.png" alt=""></dt><dd><span class="name">sushiyuki_belt_saba</span><span class="url">https://awayuki.github.io/emoji/v2-032.png</span></dd>
+            <dt><img src="emoji/v2-033.png" alt=""></dt><dd><span class="name">sushiyuki_belt_tekkamaki</span><span class="url">https://awayuki.github.io/emoji/v2-033.png</span></dd>
+            <dt><img src="emoji/v2-034.png" alt=""></dt><dd><span class="name">sushiyuki_belt_kappamaki</span><span class="url">https://awayuki.github.io/emoji/v2-034.png</span></dd>
+            <dt><img src="emoji/v2-035.png" alt=""></dt><dd><span class="name">sushiyuki_belt_kappa</span><span class="url">https://awayuki.github.io/emoji/v2-035.png</span></dd>
+            <dt><img src="emoji/v2-036.png" alt=""></dt><dd><span class="name">sushiyuki_belt_heart1</span><span class="url">https://awayuki.github.io/emoji/v2-036.png</span></dd>
+            <dt><img src="emoji/v2-037.png" alt=""></dt><dd><span class="name">sushiyuki_belt_heart2</span><span class="url">https://awayuki.github.io/emoji/v2-037.png</span></dd>
+            <dt><img src="emoji/v2-038.png" alt=""></dt><dd><span class="name">sushiyuki_belt_beer</span><span class="url">https://awayuki.github.io/emoji/v2-038.png</span></dd>
+            <dt><img src="emoji/v2-039.png" alt=""></dt><dd><span class="name">sushiyuki_belt_pudding</span><span class="url">https://awayuki.github.io/emoji/v2-039.png</span></dd>
+            <dt><img src="emoji/v2-040.png" alt=""></dt><dd><span class="name">sushiyuki_belt_coffee</span><span class="url">https://awayuki.github.io/emoji/v2-040.png</span></dd>
+            <dt><img src="emoji/np-001.gif" alt=""></dt><dd><span class="name">nostopus_walk</span><span class="url">https://awayuki.github.io/emoji/np-001.gif</span></dd>
+            <dt><img src="emoji/np-002.gif" alt=""></dt><dd><span class="name">nostopus_spin</span><span class="url">https://awayuki.github.io/emoji/np-002.gif</span></dd>
         </dl>
     </div>
 </div>
