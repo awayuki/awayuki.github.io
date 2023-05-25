@@ -11,7 +11,7 @@
 <style>
 img {width:40px;height:40px;}
 body{margin:0;padding:0;background:#eee;font-family:'Mitr',sans-serif;}
-.header{display:flex;align-items:center;box-sizing:border-box;width:100%;padding:0 15px;height:80px;background:#3b1e56;}
+.header{display:flex;align-items:center;justify-content:center; box-sizing:border-box;width:100%;padding:0 15px;height:80px;background:#3b1e56;}
 .emoji__h1{margin:0;font-size:30px;font-weight:400;color:#fff;}
 .emoji{margin:30px auto;}
 .emoji__block{margin:30px 0;padding:15px 0 55px;box-sizing:border-box;border:4px solid #000;border-radius:40px;background:#000;}
@@ -24,14 +24,20 @@ body{margin:0;padding:0;background:#eee;font-family:'Mitr',sans-serif;}
 .url{display:block;font-size:14px;font-weight:400;}
 .link__json{width:120px;margin:0 15px 0 auto;}
 .link__json a{display:flex;align-items:center;justify-content:center;height:40px;width:120px;border-radius:20px;background:#ec5ceb;text-decoration:none;color:#fff;}
+.emoji__terms{margin:30px 0;padding:30px 15px;box-sizing:border-box;border:4px solid #000;border-radius:40px;}
+.terms__title{text-align: center;margin: 0;}
+.terms__list{margin:1em 0 0;padding-left:0;list-style-type:none;}
+.terms__list li{display:flex;padding:.5em 0 0; word-break:break-all;overflow-wrap:break-word;font-size:16px;}
+.terms__list li::before{content:'●';display:block;width:1em;margin-right:.5em; text-align:center; color: #3b1e56;}
 @media screen and (max-width: 479px) {
     .emoji__h1{font-size:6vw;}
     .name{font-size:4vw;}
     .url{font-size:3vw;}
-    .emoji__block{margin:15px;}
+    .emoji__block,.emoji__terms{margin:15px;}
+    .terms__list li{font-size:4vw;}
 }
 @media screen and (min-width: 480px) {
-    .emoji__block{margin:0 auto;max-width:450px;}
+    .emoji__block,.emoji__terms{margin-right:auto;margin-left:auto;max-width:450px;}
 }
 </style>
 </head>
@@ -127,6 +133,15 @@ body{margin:0;padding:0;background:#eee;font-family:'Mitr',sans-serif;}
             <dt><img src="emoji/np-001.gif" alt=""></dt><dd><span class="name">nostopus_walk</span><span class="url">https://awayuki.github.io/emoji/np-001.gif</span></dd>
             <dt><img src="emoji/np-002.gif" alt=""></dt><dd><span class="name">nostopus_spin</span><span class="url">https://awayuki.github.io/emoji/np-002.gif</span></dd>
         </dl>
+    </div>
+    <div class="emoji__terms" id="terms">
+        <h2 class="terms__title">ご利用について</h2>
+        <ul class="terms__list">
+            <li>個人の方がご自分でSNSなどで絵文字として使うのは、そのままご自由にお使いください。</li>
+            <li>他の人が使用するために再配布する場合は「 ©awayuki 」のクレジットとこの利用規約 https://awayuki.github.io/emojis#terms について記載をお願いします。</li>
+            <li>商用利用は禁止します。</li>
+            <li>アートワークの改変を禁止します。</li>
+        </ul>
     </div>
 </div>
 
