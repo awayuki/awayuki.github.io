@@ -1,6 +1,16 @@
 const relayInit = window.NostrTools.relayInit;
 const relayUrl = "wss://relay-jp.nostr.wirednet.jp";
-const container = document.querySelector('.container');
+
+const container = document.querySelector('.emoji-wrapper');
+
+const createEmojiBlock = (emoji, posX, posY) => {
+  const newDiv = document.createElement('div');
+  newDiv.innerText = emoji;
+  newDiv.style.left = posX + 'vw';
+  newDiv.style.top = posY + 'vh';
+  newDiv.classList.add('emoji');
+  container.appendChild(newDiv);
+}
 
 const main = async () => {
   const relay = relayInit( relayUrl );
@@ -23,19 +33,13 @@ const main = async () => {
     if (ev.content == '+') {
       emoji = '💜';
     } else {
-      emoji = '🍡';
-      // emoji = ev.content;
+      emoji = ev.content;
     }
-
-    console.log(emoji);
-
     const posX = Math.random() * 100;
     const posY = Math.random() * 100;
-    const emojiBlock = '<div class="emoji" style="left:' + posX + '%;top:' + posY + '%;">' + emoji + '</div>';
-
-    container.insertAdjacentHTML('beforeend', emojiBlock);
-
     
+    createEmojiBlock(emoji, posX, posY);    
+    console.log(emoji);
   });
 
 };
