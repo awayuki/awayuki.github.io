@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>💜 Nostr Reactions 🤙 - awayuki.github.io</title>
+
+<meta property="og:title" content="Nostr Reactions">
+<meta property="og:description" content="Reaction Viewer">
+<meta property="og:url" content="https://awayuki.github.io/nostr-reactions/">
+<meta property="og:image" content="https://awayuki.github.io/nostr-reactions/img/ogimg.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="awayuki.github.io">
+<meta name="twitter:card" content="summary_large_image"> 
+<meta name="twitter:site" content="@awayuki">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+<style>
+html,body{height:100%;margin:0;padding:0;}
+body{font-family: "游ゴシック Medium", YuGothic, YuGothicM,"Hiragino Kaku Gothic ProN", Meiryo, sans-serif;}
+.container{display:grid;place-content:center;height:100dvh;background:#000;}
+h1 {font-family:'Monoton',sans-serif;font-size:10vw;font-weight: normal;background-color: #00DBDE;background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);color:transparent;-webkit-background-clip:text;background-clip: text;}
+.emoji{position:absolute;}
+@media (max-width: 767.99px) {.emoji {font-size: 6vw;}}
+@media (min-width: 768px) {.emoji {font-size: 4vw;}}
+</style>
+<script src="https://unpkg.com/nostr-tools/lib/nostr.bundle.js"></script>
+<script src="./utils.js" defer></script>
+<script src="./emoji.js" defer></script>
+</head>
+<body>
+<div class="container">
+<h1 class="logo">Reactions</h1>
+<div class="emoji-wrapper"></div>
+</div>
+</body>
+</html>
