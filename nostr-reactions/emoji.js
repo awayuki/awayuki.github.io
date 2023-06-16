@@ -3,6 +3,7 @@ const relayUrl = "wss://relay-jp.nostr.wirednet.jp";
 
 const container = document.querySelector('.emoji-wrapper');
 
+let i = 0;
 const createEmojiBlock = (emoji, posX, posY) => {
   const newDiv = document.createElement('div');
   newDiv.innerText = emoji;
@@ -10,6 +11,18 @@ const createEmojiBlock = (emoji, posX, posY) => {
   newDiv.style.top = posY + 'vh';
   newDiv.classList.add('emoji');
   container.appendChild(newDiv);
+
+  i++;
+  if (Number.isInteger(i / 20)) {
+    const emojiBlock = container.querySelectorAll('.emoji');
+    for (const item of emojiBlock) {
+      const style = window.getComputedStyle(item);
+      let value = style.getPropertyValue('opacity');
+      if (value == 0) {
+        item.remove();
+      }
+    }
+  }
 }
 
 const main = async () => {
