@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;400;600&display=swap" rel="stylesheet">
 <style>
-img {width:40px;height:40px;}
+html{scroll-behavior:smooth;}
 body{margin:0;padding:0;background:#eee;font-family:'Mitr',sans-serif;}
 .header{display:flex;align-items:center;justify-content:center; box-sizing:border-box;width:100%;padding:0 15px;height:80px;background:#3b1e56;}
 .emoji__h1{margin:0;font-size:30px;font-weight:400;color:#fff;}
@@ -17,6 +17,7 @@ body{margin:0;padding:0;background:#eee;font-family:'Mitr',sans-serif;}
 .emoji__block{margin:30px 0;padding:15px 0 55px;box-sizing:border-box;border:4px solid #000;border-radius:40px;background:#000;}
 .emoji__list{display:flex;flex-wrap:wrap;align-items:stretch; margin:15px 0 0;padding:0;border-top:2px solid #000;}
 .emoji__list dt{display:flex;align-items:center;justify-content:center;width:60px;box-sizing:border-box;margin:0;padding:10px;border-bottom:2px solid#000;background:#eee;}
+.emoji__list dt img{height: 40px;}
 .emoji__list dd{width:calc(100% - 60px);box-sizing:border-box;margin:0;padding:10px 0;border-bottom:2px solid #000;background:#eee;}
 .name{display:block;font-size: 20px;font-weight: 400;color:#3b1e56;}
 .name::before{content:':';display:inline-block;margin-right:.2em;}
@@ -29,25 +30,38 @@ body{margin:0;padding:0;background:#eee;font-family:'Mitr',sans-serif;}
 .terms__list{margin:1em 0 0;padding-left:0;list-style-type:none;}
 .terms__list li{display:flex;padding:.5em 0 0; word-break:break-all;overflow-wrap:break-word;font-size:16px;}
 .terms__list li::before{content:'●';display:block;width:1em;margin-right:.5em; text-align:center; color: #3b1e56;}
+.emoji__index{margin:0;padding:0;}
+.index__list{display:flex;margin:0;padding:0;list-style-type:none;}
+.index__list li{width:60px;height: 60px;}
+.index__list li:nth-child(n+2){padding-left:10px;}
+.index__list li a{display:flex;width:60px;height:60px;align-items:center;justify-content:center;background:#000;border-radius:30px;}
+.index__list li img{height: 30px;}
 @media screen and (max-width: 479px) {
     .emoji__h1{font-size:6vw;}
     .name{font-size:4vw;}
     .url{font-size:3vw;}
-    .emoji__block,.emoji__terms{margin:15px;}
+    .emoji__block,.emoji__terms,.index__list{margin:15px;}
     .terms__list li{font-size:4vw;}
 }
 @media screen and (min-width: 480px) {
-    .emoji__block,.emoji__terms{margin-right:auto;margin-left:auto;max-width:450px;}
+    .emoji__block,.emoji__terms,.emoji__index{margin-inline:auto;max-width:450px;}
 }
 </style>
 </head>
 <body>
 <header class="header">
-    <h1 class="emoji__h1">SUSHIYUKI emojis</h1>
+    <h1 class="emoji__h1">AWAYUKI emojis</h1>
 </header>
 
 <div class="emoji">
-    <div class="emoji__block">
+    <div class="emoji__index">
+        <ul class="index__list">
+            <li><a href="#sushiyuki"><img src="emoji/v1-001.png" alt="SUSHIYUKI emojis"></a></li>
+            <li><a href="#nostopus"><img src="emoji/np-001.gif" alt="NOSTOPUS emojis"></a></li>
+            <li><a href="#mahjong"><img src="emoji/mahjong-s1.png" alt="Mahjong emojis"></a></li>
+        </ul>
+    </div>
+    <div class="emoji__block" id="sushiyuki">
         <p class="link__json"><a href="awayuki_emojis.json">JSON file</a></p>
         <dl class="emoji__list">
             <dt><img src="emoji/v1-001.png" alt=""></dt><dd><span class="name">sushiyuki_maguro</span><span class="url">https://awayuki.github.io/emoji/v1-001.png</span></dd>
@@ -130,9 +144,86 @@ body{margin:0;padding:0;background:#eee;font-family:'Mitr',sans-serif;}
             <dt><img src="emoji/v2-038.png" alt=""></dt><dd><span class="name">sushiyuki_belt_beer</span><span class="url">https://awayuki.github.io/emoji/v2-038.png</span></dd>
             <dt><img src="emoji/v2-039.png" alt=""></dt><dd><span class="name">sushiyuki_belt_pudding</span><span class="url">https://awayuki.github.io/emoji/v2-039.png</span></dd>
             <dt><img src="emoji/v2-040.png" alt=""></dt><dd><span class="name">sushiyuki_belt_coffee</span><span class="url">https://awayuki.github.io/emoji/v2-040.png</span></dd>
+        </dl>
+    </div>
+    <div class="emoji__block" id="nostopus">
+        <p class="link__json"><a href="nostopus_emojis.json">JSON file</a></p>
+        <dl class="emoji__list">
             <dt><img src="emoji/np-001.gif" alt=""></dt><dd><span class="name">nostopus_walk</span><span class="url">https://awayuki.github.io/emoji/np-001.gif</span></dd>
             <dt><img src="emoji/np-002.gif" alt=""></dt><dd><span class="name">nostopus_spin</span><span class="url">https://awayuki.github.io/emoji/np-002.gif</span></dd>
         </dl>
+    </div>
+    <div class="emoji__block" id="mahjong">
+        <p class="link__json"><a href="mahjong_emojis.json">JSON file</a></p>
+        <dl class="emoji__list">
+            <dt><img src="emoji/mahjong-m1.png" alt=""></dt>
+            <dd><span class="name">mahjong_m1</span><span class="url">https://awayuki.github.io/emoji/(mahjong-m1.png)</span></dd>
+            <dt><img src="emoji/mahjong-m2.png" alt=""></dt>
+            <dd><span class="name">mahjong_m2</span><span class="url">https://awayuki.github.io/emoji/(mahjong-m2.png)</span></dd>
+            <dt><img src="emoji/mahjong-m3.png" alt=""></dt>
+            <dd><span class="name">mahjong_m3</span><span class="url">https://awayuki.github.io/emoji/(mahjong-m3.png)</span></dd>
+            <dt><img src="emoji/mahjong-m4.png" alt=""></dt>
+            <dd><span class="name">mahjong_m4</span><span class="url">https://awayuki.github.io/emoji/(mahjong-m4.png)</span></dd>
+            <dt><img src="emoji/mahjong-m5.png" alt=""></dt>
+            <dd><span class="name">mahjong_m5</span><span class="url">https://awayuki.github.io/emoji/(mahjong-m5.png)</span></dd>
+            <dt><img src="emoji/mahjong-m6.png" alt=""></dt>
+            <dd><span class="name">mahjong_m6</span><span class="url">https://awayuki.github.io/emoji/(mahjong-m6.png)</span></dd>
+            <dt><img src="emoji/mahjong-m7.png" alt=""></dt>
+            <dd><span class="name">mahjong_m7</span><span class="url">https://awayuki.github.io/emoji/(mahjong-m7.png)</span></dd>
+            <dt><img src="emoji/mahjong-m8.png" alt=""></dt>
+            <dd><span class="name">mahjong_m8</span><span class="url">https://awayuki.github.io/emoji/(mahjong-m8.png)</span></dd>
+            <dt><img src="emoji/mahjong-m9.png" alt=""></dt>
+            <dd><span class="name">mahjong_m9</span><span class="url">https://awayuki.github.io/emoji/(mahjong-m9.png)</span></dd>
+            <dt><img src="emoji/mahjong-p1.png" alt=""></dt>
+            <dd><span class="name">mahjong_p1</span><span class="url">https://awayuki.github.io/emoji/(mahjong-p1.png)</span></dd>
+            <dt><img src="emoji/mahjong-p2.png" alt=""></dt>
+            <dd><span class="name">mahjong_p2</span><span class="url">https://awayuki.github.io/emoji/(mahjong-p2.png)</span></dd>
+            <dt><img src="emoji/mahjong-p3.png" alt=""></dt>
+            <dd><span class="name">mahjong_p3</span><span class="url">https://awayuki.github.io/emoji/(mahjong-p3.png)</span></dd>
+            <dt><img src="emoji/mahjong-p4.png" alt=""></dt>
+            <dd><span class="name">mahjong_p4</span><span class="url">https://awayuki.github.io/emoji/(mahjong-p4.png)</span></dd>
+            <dt><img src="emoji/mahjong-p5.png" alt=""></dt>
+            <dd><span class="name">mahjong_p5</span><span class="url">https://awayuki.github.io/emoji/(mahjong-p5.png)</span></dd>
+            <dt><img src="emoji/mahjong-p6.png" alt=""></dt>
+            <dd><span class="name">mahjong_p6</span><span class="url">https://awayuki.github.io/emoji/(mahjong-p6.png)</span></dd>
+            <dt><img src="emoji/mahjong-p7.png" alt=""></dt>
+            <dd><span class="name">mahjong_p7</span><span class="url">https://awayuki.github.io/emoji/(mahjong-p7.png)</span></dd>
+            <dt><img src="emoji/mahjong-p8.png" alt=""></dt>
+            <dd><span class="name">mahjong_p8</span><span class="url">https://awayuki.github.io/emoji/(mahjong-p8.png)</span></dd>
+            <dt><img src="emoji/mahjong-p9.png" alt=""></dt>
+            <dd><span class="name">mahjong_p9</span><span class="url">https://awayuki.github.io/emoji/(mahjong-p9.png)</span></dd>
+            <dt><img src="emoji/mahjong-s1.png" alt=""></dt>
+            <dd><span class="name">mahjong_s1</span><span class="url">https://awayuki.github.io/emoji/(mahjong-s1.png)</span></dd>
+            <dt><img src="emoji/mahjong-s2.png" alt=""></dt>
+            <dd><span class="name">mahjong_s2</span><span class="url">https://awayuki.github.io/emoji/(mahjong-s2.png)</span></dd>
+            <dt><img src="emoji/mahjong-s3.png" alt=""></dt>
+            <dd><span class="name">mahjong_s3</span><span class="url">https://awayuki.github.io/emoji/(mahjong-s3.png)</span></dd>
+            <dt><img src="emoji/mahjong-s4.png" alt=""></dt>
+            <dd><span class="name">mahjong_s4</span><span class="url">https://awayuki.github.io/emoji/(mahjong-s4.png)</span></dd>
+            <dt><img src="emoji/mahjong-s5.png" alt=""></dt>
+            <dd><span class="name">mahjong_s5</span><span class="url">https://awayuki.github.io/emoji/(mahjong-s5.png)</span></dd>
+            <dt><img src="emoji/mahjong-s6.png" alt=""></dt>
+            <dd><span class="name">mahjong_s6</span><span class="url">https://awayuki.github.io/emoji/(mahjong-s6.png)</span></dd>
+            <dt><img src="emoji/mahjong-s7.png" alt=""></dt>
+            <dd><span class="name">mahjong_s7</span><span class="url">https://awayuki.github.io/emoji/(mahjong-s7.png)</span></dd>
+            <dt><img src="emoji/mahjong-s8.png" alt=""></dt>
+            <dd><span class="name">mahjong_s8</span><span class="url">https://awayuki.github.io/emoji/(mahjong-s8.png)</span></dd>
+            <dt><img src="emoji/mahjong-s9.png" alt=""></dt>
+            <dd><span class="name">mahjong_s9</span><span class="url">https://awayuki.github.io/emoji/(mahjong-s9.png)</span></dd>
+            <dt><img src="emoji/mahjong-east.png" alt=""></dt>
+            <dd><span class="name">mahjong_east</span><span class="url">https://awayuki.github.io/emoji/(mahjong-east.png)</span></dd>
+            <dt><img src="emoji/mahjong-south.png" alt=""></dt>
+            <dd><span class="name">mahjong_south</span><span class="url">https://awayuki.github.io/emoji/(mahjong-south.png)</span></dd>
+            <dt><img src="emoji/mahjong-west.png" alt=""></dt>
+            <dd><span class="name">mahjong_west</span><span class="url">https://awayuki.github.io/emoji/(mahjong-west.png)</span></dd>
+            <dt><img src="emoji/mahjong-north.png" alt=""></dt>
+            <dd><span class="name">mahjong_north</span><span class="url">https://awayuki.github.io/emoji/(mahjong-north.png)</span></dd>
+            <dt><img src="emoji/mahjong-white.png" alt=""></dt>
+            <dd><span class="name">mahjong_white</span><span class="url">https://awayuki.github.io/emoji/(mahjong-white.png)</span></dd>
+            <dt><img src="emoji/mahjong-green.png" alt=""></dt>
+            <dd><span class="name">mahjong_green</span><span class="url">https://awayuki.github.io/emoji/(mahjong-green.png)</span></dd>
+            <dt><img src="emoji/mahjong-red.png" alt=""></dt>
+            <dd><span class="name">mahjong_red</span><span class="url">https://awayuki.github.io/emoji/(mahjong-red.png)</span></dd>        </dl>
     </div>
     <div class="emoji__terms" id="terms">
         <h2 class="terms__title">ご利用について</h2>
